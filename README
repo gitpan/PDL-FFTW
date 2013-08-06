@@ -1,0 +1,48 @@
+PDL-FFTW
+========
+
+This module provides bindings to the FFTW version 2.x library
+(the original API).  It was originally part of the PDL distribution
+As of Aug 2013, it has been spun off into its own distribution for
+improved portability and to make way for FFTW3.
+
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+This module needs the perl PDL module and the FFTW library
+version 2 installed.  FFTW is a free C FFT library including
+multi-dimensional, real, and parallel transforms.
+See http://www.fftw.org/ for the sources and directions
+for how to build the module.
+
+This module is not compatible with the current FFTW3 API.
+
+
+CONFIGURATION OPTIONS
+
+The following 
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 1999 Christian Pellegrin, 2000 Christian Soeller,
+and 2013 Chris Marshall.
+
+All rights reserved. There is no warranty.  This library is free
+software; you can redistribute it and/or modify it under the same
+terms as Perl itself, either Perl version 5.008 or, at your option,
+any later version of Perl 5 you may have available.
+
+

@@ -1,0 +1,10 @@
+Revision history for Perl extension PDL::FFTW.
+
+2.016  2013-08-05 12:54:15 EST
+
+ - Split out PDL::FFTW into its own CPAN distribution
+
+0.500  1999-12-09 00:00:00
+
+ - Initial commit of original FFT2.x code by Christian
+   Pellegrin into the PDL core distribution.
