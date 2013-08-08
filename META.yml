@@ -3,9 +3,9 @@ abstract: unknown
 author:
   - unknown
 build_requires:
-  ExtUtils::MakeMaker: 0
+  PDL: 2.004
 configure_requires:
-  ExtUtils::MakeMaker: 0
+  PDL: 2.004
 dynamic_config: 1
 generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.130880'
 license: unknown
@@ -22,4 +22,4 @@ requires:
 resources:
   bugtracker: http://sourceforge.net/p/pdl/bugs/
   homepage: http://pdl.perl.org/
-version: 2.016_01
+version: 2.016_02

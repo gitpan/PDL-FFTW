@@ -22,7 +22,18 @@ This module is not compatible with the current FFTW3 API.
 
 CONFIGURATION OPTIONS
 
-The following 
+Please edit the fftw.conf file to change the configuration
+options repeats from that file here for convenience:
+
+   # Location to search for the FFTW libs, overrides default if defined
+   FFTW_LIBS => undef,    # [ '/lib','/usr/lib','/usr/local/lib'],
+   
+   # Location to find FFTW includes, overrides default if defined
+   FFTW_INC => undef,     # ['/usr/include/','/usr/local/include'],
+   
+   # FFTW Numeric Precision Type to link in: (double or single precision)
+   FFTW_TYPE => 'double', # 'single'
+
 
 INSTALLATION
 

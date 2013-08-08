@@ -22,12 +22,12 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "PDL" : "2.004"
          }
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "PDL" : "2.004"
          }
       },
       "runtime" : {
@@ -43,5 +43,5 @@
       },
       "homepage" : "http://pdl.perl.org/"
    },
-   "version" : "2.016_01"
+   "version" : "2.016_02"
 }
