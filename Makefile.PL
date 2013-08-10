@@ -176,17 +176,17 @@ $hash{INC} .= " -I".join(' -I',@FFTW_inc_locations);
 $hash{VERSION_FROM} = 'fftw.pd';
 $hash{clean}->{FILES} .= ' typespec MANIFEST.bak';
 push @{$hash{LIBS}},"-lm -L".join(" -L",@FFTW_lib_locations)." $lib";
-$hash{CONFIGURE_REQUIRES} = { 'PDL' => 2.004, };
-$hash{BUILD_REQUIRES} = { 'PDL' => 2.004, };
 $hash{PREREQ_PM} = { 'PDL' => 2.004, };
 $hash{META_MERGE} = {
    'resources' => {
       'homepage' => 'http://pdl.perl.org/',
-      'bugtracker'  => 'http://sourceforge.net/p/pdl/bugs/',
+      'bugtracker'  => {
+         'web' => 'http://sourceforge.net/p/pdl/bugs/',
+      },
       'repository'  => {
          'url' => 'git://git.code.sf.net/p/pdl/pdl-fftw',
-         'type' => 'git',
          'web' => 'http://sourceforge.net/p/pdl/pdl-fftw/ci/master/tree/',
+         'type' => 'git',
       },
    },
 };

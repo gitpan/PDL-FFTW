@@ -4,7 +4,7 @@
       "unknown"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.130880",
+   "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.132140",
    "license" : [
       "unknown"
    ],
@@ -22,12 +22,12 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "PDL" : "2.004"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "PDL" : "2.004"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "runtime" : {
@@ -36,12 +36,9 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
-      "bugtracker" : {
-         "web" : "http://sourceforge.net/p/pdl/bugs/"
-      },
       "homepage" : "http://pdl.perl.org/"
    },
-   "version" : "2.016_02"
+   "version" : "2.017"
 }
