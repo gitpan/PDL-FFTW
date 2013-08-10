@@ -17,8 +17,12 @@ no_index:
   directory:
     - t
     - inc
+provides:
+  PDL::FFTW:
+    file: fftw.pd
+    version: 2.018
 requires:
   PDL: 2.004
 resources:
   homepage: http://pdl.perl.org/
-version: 2.017
+version: 2.018

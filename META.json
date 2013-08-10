@@ -36,9 +36,15 @@
          }
       }
    },
+   "provides" : {
+      "PDL::FFTW" : {
+         "file" : "fftw.pd",
+         "version" : "2.018"
+      }
+   },
    "release_status" : "stable",
    "resources" : {
       "homepage" : "http://pdl.perl.org/"
    },
-   "version" : "2.017"
+   "version" : "2.018"
 }
