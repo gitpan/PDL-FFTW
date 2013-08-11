@@ -177,11 +177,12 @@ $hash{VERSION_FROM} = 'fftw.pd';
 $hash{clean}->{FILES} .= ' typespec MANIFEST.bak';
 push @{$hash{LIBS}},"-lm -L".join(" -L",@FFTW_lib_locations)." $lib";
 $hash{PREREQ_PM} = { 'PDL' => 2.004, };
+$hash{CONFIGURE_REQUIRES} = { 'PDL' => 2.004, };
 $hash{META_MERGE} = {
    'provides' => {
       'PDL::FFTW' => {
          'file' => 'fftw.pd',
-         'version' => '2.018',
+         'version' => '2.019',
       },
    },
    'resources' => {

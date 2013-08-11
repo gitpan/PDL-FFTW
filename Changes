@@ -1,5 +1,18 @@
 Revision history for Perl extension PDL::FFTW.
 
+2.019  2013-08-10
+
+ - Add PDL to the CONFIGURE_REQUIRES for CPAN
+   dependencies
+
+2.018  2013-08-10 12:30:00 EST
+
+ - Add provides meta data so PDL::FFTW is indexed
+
+2.017  2013-08-10
+
+ - First CPAN release version
+
 2.016  2013-08-05 12:54:15 EST
 
  - Split out PDL::FFTW into its own CPAN distribution

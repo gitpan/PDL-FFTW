@@ -3,7 +3,7 @@
 # docs improvement
 # use PDL::Complex?
 
-our $VERSION = '2.018';
+our $VERSION = '2.019';
 pp_setversion(qq{'$VERSION'});
 
 require 'typespec';
