@@ -1,5 +1,10 @@
 Revision history for Perl extension PDL::FFTW.
 
+2.020  2013-10-14
+
+ - Fix to handle new PDL-2.007 sign convention for FFT
+ - Minimum PDL version is now 2.007
+
 2.019  2013-08-10
 
  - Add PDL to the CONFIGURE_REQUIRES for CPAN

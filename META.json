@@ -22,29 +22,29 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "PDL" : "2.007"
          }
       },
       "configure" : {
          "requires" : {
-            "PDL" : "2.004"
+            "PDL" : "2.007"
          }
       },
       "runtime" : {
          "requires" : {
-            "PDL" : "2.004"
+            "PDL" : "2.007"
          }
       }
    },
    "provides" : {
       "PDL::FFTW" : {
          "file" : "fftw.pd",
-         "version" : "2.019"
+         "version" : "2.020"
       }
    },
    "release_status" : "stable",
    "resources" : {
       "homepage" : "http://pdl.perl.org/"
    },
-   "version" : "2.019"
+   "version" : "2.020"
 }

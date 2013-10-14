@@ -36,7 +36,7 @@ $ii = random $ii;
 
 $i = cat $ir,$ii;
 $i = $i->mv(2,0);
-$fi = ifftw $i;
+$fi = fftw $i;
 
 $fir = $ir->copy;
 $fii = $ii->copy;
@@ -47,11 +47,11 @@ $ffi = $ffi->mv(2,0);
 my ( $t, $orig, $i2, $sffi );
 $t = ($ffi-$fi)*($ffi-$fi);
 
-# print diff fftnd and ifftw: ",sqrt($t->sum),"\n";
+# print diff fftnd and fftw: ",sqrt($t->sum),"\n";
 ok(approx(sqrt($t->sum),pdl(0),ABSDIFF),
-   "fftnd() and ifftw()");
+   "fftnd() and fftw()");
 
-$orig = fftw $fi;
+$orig = ifftw $fi;
 $orig /= $n*$m;
 
 $t = ($orig-$i)*($orig-$i);
@@ -62,14 +62,14 @@ ok(approx(sqrt($t->sum),pdl(0),ABSDIFF),
 # Inplace FFT
 $i2 = $i->copy;
 
-infftw($i2);
+nfftw($i2);
 
 $t = ($i2-$ffi)*($i2-$ffi);
-# print "diff fftnd and infftw: ",sqrt($t->sum),"\n";
+# print "diff fftnd and nfftw: ",sqrt($t->sum),"\n";
 ok(approx(sqrt($t->sum),pdl(0),ABSDIFF),
-   "fftnd and infftw");
+   "fftnd and nfftw");
 
-$i2 = nfftw $i2;
+$i2 = infftw $i2;
 $i2 /= $n*$m;
 
 $t = ($i-$i2)*($i-$i2);
@@ -83,10 +83,10 @@ $ir = random $ir;
 
 $fir = $ir->copy;
 $fii = $ii->copy;
-ifftnd $fir,$fii;
+fftnd $fir,$fii;
 $ffi = cat $fir,$fii;
 $ffi = $ffi->mv(2,0);
-$ffi *= $n*$m;
+#$ffi *= $n*$m;
 $sffi = $ffi->mslice('X',[0,$n/2],'X');
 
 $fi = rfftw $ir;
