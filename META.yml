@@ -23,6 +23,7 @@ no_index:
 provides:
   PDL::FFTW:
     file: fftw.pd
+    version: 2.022
 requires:
   PDL: 2.007
 resources:
@@ -30,4 +31,4 @@ resources:
   homepage: http://pdl.perl.org/
   license: http://cpansearch.perl.org/src/CHM/PDL-2.007/COPYING
   repository: git://git.code.sf.net/p/pdl/pdl-fftw
-version: 2.021
+version: 2.022

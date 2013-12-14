@@ -1,5 +1,9 @@
 Revision history for Perl extension PDL::FFTW.
 
+2.022  2013-12-14 14:19:47 EST
+
+ - Fix missing version in meta data
+
 2.021  2013-12-14 13:54:50 EST
 
  - Fix problem with META.json generation

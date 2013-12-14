@@ -41,7 +41,8 @@
    },
    "provides" : {
       "PDL::FFTW" : {
-         "file" : "fftw.pd"
+         "file" : "fftw.pd",
+         "version" : "2.022"
       }
    },
    "release_status" : "stable",
@@ -59,5 +60,5 @@
          "web" : "http://sourceforge.net/p/pdl/pdl-fftw/ci/master/tree/"
       }
    },
-   "version" : "2.021"
+   "version" : "2.022"
 }
