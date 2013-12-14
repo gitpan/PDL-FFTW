@@ -2,9 +2,10 @@ PDL-FFTW
 ========
 
 This module provides bindings to the FFTW version 2.x library
-(the original API).  It was originally part of the PDL distribution
-As of Aug 2013, it has been spun off into its own distribution for
-improved portability and to make way for FFTW3.
+(the original API) and has been removed from the PDL main
+distribution and has been deprecated. It is provided only for
+continuity until the coming release of PDL::FFTW3. At that time
+it will be obsolete.
 
 
 DEPENDENCIES

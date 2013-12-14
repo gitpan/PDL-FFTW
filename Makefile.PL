@@ -176,25 +176,56 @@ $hash{INC} .= " -I".join(' -I',@FFTW_inc_locations);
 $hash{VERSION_FROM} = 'fftw.pd';
 $hash{clean}->{FILES} .= ' typespec MANIFEST.bak';
 push @{$hash{LIBS}},"-lm -L".join(" -L",@FFTW_lib_locations)." $lib";
-$hash{BUILD_REQUIRES} = { 'PDL' => 2.007, };
-$hash{CONFIGURE_REQUIRES} = { 'PDL' => 2.007, };
-$hash{PREREQ_PM} = { 'PDL' => 2.007, };
+## $hash{BUILD_REQUIRES} = { 'PDL' => 2.007, };
+## $hash{CONFIGURE_REQUIRES} = { 'PDL' => 2.007, };
+## $hash{PREREQ_PM} = { 'PDL' => 2.007, };
 $hash{META_MERGE} = {
+   'name' => 'PDL-FFTW',
+   'abstract' => 'Deprecated FFTW version 2 bindings for PDL',
+   'release_status' => 'stable',
+   'author'   => [ 'Chris Marshall <chm@cpan.org>', ],
+   'license'  => [ 'unknown' ],
+   'prereqs' => {
+      'runtime' => {
+         'requires' => {
+            'PDL' => '2.007',
+         },
+      },
+      'build' => {
+         'requires' => {
+            'ExtUtils::MakeMaker' => '0',
+            'PDL' => '2.007',
+            'Test::More' => '0',
+         },
+      },
+      'configure' => {
+         'requires' => {
+            'ExtUtils::MakeMaker' => '0',
+            'PDL' => '2.007',
+         },
+      },
+   },
+   resources => {
+      license     => [ 'http://cpansearch.perl.org/src/CHM/PDL-2.007/COPYING' ],
+      homepage    => 'http://pdl.perl.org/',
+      bugtracker  => {
+         web    => 'http://rt.cpan.org/Public/Dist/Display.html?Name=PDL-FFTW',
+      },
+      repository  => {
+         url  => 'git://git.code.sf.net/p/pdl/pdl-fftw',
+         web  => 'http://sourceforge.net/p/pdl/pdl-fftw/ci/master/tree/',
+         type => 'git',
+      },
+   },
+   'dynamic_config' => 1,
+   'meta-spec' => {
+      'version' => '2',
+      'url'     => 'http://search.cpan.org/perldoc?CPAN::Meta::Spec',
+   },
+   'generated_by' => 'Chris Marshall',
    'provides' => {
       'PDL::FFTW' => {
          'file' => 'fftw.pd',
-         'version' => '2.020',
-      },
-   },
-   'resources' => {
-      'homepage' => 'http://pdl.perl.org/',
-      'bugtracker'  => {
-         'web' => 'http://sourceforge.net/p/pdl/bugs/',
-      },
-      'repository'  => {
-         'url' => 'git://git.code.sf.net/p/pdl/pdl-fftw',
-         'web' => 'http://sourceforge.net/p/pdl/pdl-fftw/ci/master/tree/',
-         'type' => 'git',
       },
    },
 };

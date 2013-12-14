@@ -1,5 +1,10 @@
 Revision history for Perl extension PDL::FFTW.
 
+2.021  2013-12-14 13:54:50 EST
+
+ - Fix problem with META.json generation
+ - Add deprecation and obsoletion plans to README
+
 2.020  2013-10-14
 
  - Fix to handle new PDL-2.007 sign convention for FFT
